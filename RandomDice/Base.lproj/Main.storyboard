@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon app diamond (3) 2" translatesAutoresizingMaskIntoConstraints="NO" id="hLw-UW-Abg">
+                                <rect key="frame" x="25" y="35" width="340" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="R1y-Ia-gVl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dado-1" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-Ad-2cQ">
+                                <rect key="frame" x="45" y="408" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="609-PI-8gb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dado-2" translatesAutoresizingMaskIntoConstraints="NO" id="eya-o6-MQN">
+                                <rect key="frame" x="226" y="510" width="119" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="5gi-wB-gvo"/>
+                                    <constraint firstAttribute="width" constant="119" id="KhD-Bi-l4e"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvx-kr-rf8">
+                                <rect key="frame" x="45" y="721" width="300" height="70"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Frame 2"/>
+                                <connections>
+                                    <action selector="rollButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvc-SH-r9w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wle-65-HvA">
+                                <rect key="frame" x="86" y="272" width="218" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.94117647058823528" green="0.44313725490196076" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.50588235290000005" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wle-65-HvA" firstAttribute="centerX" secondItem="hvx-kr-rf8" secondAttribute="centerX" id="0BX-aB-6zh"/>
+                            <constraint firstItem="Wle-65-HvA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="228" id="7Un-2R-KKQ"/>
+                            <constraint firstItem="Wle-65-HvA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Deu-zP-Qan"/>
+                            <constraint firstItem="Wle-65-HvA" firstAttribute="centerX" secondItem="hLw-UW-Abg" secondAttribute="centerX" id="Ehh-p7-30U"/>
+                            <constraint firstItem="hvx-kr-rf8" firstAttribute="top" secondItem="eya-o6-MQN" secondAttribute="bottom" constant="91" id="HJ4-oi-fqn"/>
+                            <constraint firstItem="hLw-UW-Abg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OhP-up-GUS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hvx-kr-rf8" secondAttribute="bottom" constant="19" id="aHY-fx-b04"/>
+                            <constraint firstItem="3nB-Ad-2cQ" firstAttribute="leading" secondItem="hvx-kr-rf8" secondAttribute="leading" id="hpe-j4-Qvg"/>
+                            <constraint firstItem="3nB-Ad-2cQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="jUt-eR-GAa"/>
+                            <constraint firstItem="hLw-UW-Abg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="o9i-AA-TgD"/>
+                            <constraint firstItem="eya-o6-MQN" firstAttribute="trailing" secondItem="hvx-kr-rf8" secondAttribute="trailing" id="ric-mC-L6W"/>
+                            <constraint firstItem="eya-o6-MQN" firstAttribute="leading" secondItem="3nB-Ad-2cQ" secondAttribute="trailing" constant="61" id="tGj-NB-2Ly"/>
+                            <constraint firstItem="3nB-Ad-2cQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="408" id="u75-FW-o2c"/>
+                            <constraint firstItem="hLw-UW-Abg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-9" id="uhi-vw-8BV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageViewOne" destination="3nB-Ad-2cQ" id="dGi-uf-WRP"/>
+                        <outlet property="diceImageViewTwo" destination="eya-o6-MQN" id="Lys-S9-dD2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="93.127962085308056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Frame 2" width="277" height="56"/>
+        <image name="Icon app diamond (3) 2" width="144" height="186"/>
+        <image name="dado-1" width="108" height="108"/>
+        <image name="dado-2" width="108" height="108"/>
+    </resources>
+</document>
