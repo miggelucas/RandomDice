@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon app diamond (3) 2" translatesAutoresizingMaskIntoConstraints="NO" id="FU1-7j-DUB">
-                                <rect key="frame" x="-43" y="182" width="500" height="532"/>
+                                <rect key="frame" x="-139" y="103" width="693" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
